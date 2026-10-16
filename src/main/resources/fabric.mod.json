@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "cerewareslots",
+	"version": "${version}",
+	"name": "Relic Slots",
+	"description": "Library: shared \"Relics\" screen (C key) with extra slots for Beacons Reforged, Conduit Reforged and Totem Slot.",
+	"authors": [
+		"CereWare"
+	],
+	"license": "LGPL-3.0-only",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cereware.slots.CerewareSlots"
+		],
+		"client": [
+			"com.cereware.slots.client.CerewareSlotsClient"
+		]
+	},
+	"mixins": [
+		"cerewareslots.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"badges": [
+				"library"
+			]
+		}
+	}
+}
